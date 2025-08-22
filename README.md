@@ -35,4 +35,4 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ---
 
-✨ Desarrollado con ❤️ por [Tu Nombre]
+✨ Desarrollado con ❤️ por Jor Alt
