@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional mostrando mis proyectos y habilidades en desarrollo web">
+    <meta name="theme-color" content="#121212">
+    <title>Mi Portfolio - Inicio</title>
+
+    <!-- Preload de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23121212'/><rect x='20' y='20' width='60' height='60' fill='%23a6a6a6'/><rect x='30' y='30' width='40' height='40' fill='%23f5f5f5'/></svg>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com/">
+    <meta property="og:title" content="Mi Portfolio - Desarrollador Web">
+    <meta property="og:description"
+        content="Portfolio profesional mostrando mis proyectos y habilidades en desarrollo web">
+    <meta property="og:image" content="https://tudominio.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tudominio.com/">
+    <meta name="twitter:title" content="Mi Portfolio - Desarrollador Web">
+    <meta name="twitter:description"
+        content="Portfolio profesional mostrando mis proyectos y habilidades en desarrollo web">
+    <meta name="twitter:image" content="https://tudominio.com/images/og-image.jpg">
+</head>
+
+<body>
+    <header id="header">
+        <!-- El header se cargará dinámicamente con JavaScript -->
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a mi Portfolio</h1>
+                <p>Desarrollador Web Full Stack</p>
+                <a href="#contacto" class="btn">Contáctame</a>
+            </div>
+        </section>
+
+        <section id="presentacion" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Jorge - Desarrollador Web" class="profile-image">
+                    </div>
+                    <div id="about-content" class="about-content">
+                        <!-- Contenido cargado desde Contentful -->
+                        <h3>¡Hola! Soy Jor</h3>
+                        <p>Desarrollador Web Full Stack apasionado por crear experiencias digitales excepcionales. Con
+                            experiencia en tecnologías modernas como JavaScript, React, Node.js y más.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                        <a href="contacto.html" class="btn">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section bg-light">
+            <div class="container">
+                <h2>Mis Servicios</h2>
+                <div id="services-content" class="services-grid">
+                    <!-- Servicios cargados desde Contentful -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!-- El footer se cargará dinámicamente con JavaScript -->
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
