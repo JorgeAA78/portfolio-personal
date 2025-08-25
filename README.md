@@ -11,7 +11,7 @@ Bienvenido a mi portfolio personal donde muestro mis proyectos y habilidades com
 
 ## 🌐 Demo
 
-Puedes ver el sitio en vivo en: [GitHub Pages](https://tudusuario.github.io/portfolio-personal/)
+Puedes ver el sitio en vivo en: [GitHub Pages](https://jorgeaa78.github.io/portfolio-personal/)
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -25,7 +25,7 @@ Puedes ver el sitio en vivo en: [GitHub Pages](https://tudusuario.github.io/port
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tudusuario/portfolio-personal.git
+   git clone https://jorgeaa78.github.io/portfolio-personal/
    ```
 2. Abre el archivo `index.html` en tu navegador.
 
