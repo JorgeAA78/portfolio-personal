@@ -5,8 +5,8 @@ const portfolioGrid = document.querySelector('.portfolio-grid');
 const projects = [
   {
     id: 1,
-    title: 'Proyecto 1',
-    description: 'Descripción breve del primer proyecto destacado. Incluye las tecnologías utilizadas y el objetivo principal.',
+    title: 'Sitio Web Personal',
+    description: 'Un sitio web personal desarrollado con HTML, CSS y JavaScript.',
     image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     demoUrl: '#',
@@ -14,8 +14,8 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Proyecto 2',
-    description: 'Descripción breve del segundo proyecto destacado. Muestra las características principales y tecnologías.',
+    title: 'Aplicación de Tareas',
+    description: 'Una aplicación para gestionar tareas diarias con React.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80',
     tags: ['React', 'Node.js', 'MongoDB'],
     demoUrl: '#',
@@ -23,8 +23,8 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Proyecto 3',
-    description: 'Descripción breve del tercer proyecto destacado. Explica el desafío y la solución implementada.',
+    title: 'Tienda en Línea',
+    description: 'Una tienda en línea desarrollada con Next.js y Stripe.',
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80',
     tags: ['Vue.js', 'Firebase', 'Sass'],
     demoUrl: '#',
