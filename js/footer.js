@@ -15,7 +15,7 @@ const footerContent = `
             </div>
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: contacto@miportfolio.com</p>
+                <p>Email: info@precisohys.com</p>
                 <p>Teléfono: +54 9 11 61966833</p>
             </div>
             <div class="footer-section">

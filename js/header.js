@@ -4,7 +4,7 @@ const header = document.getElementById('header');
 const headerContent = `
     <div class="container">
         <div class="logo">
-            <a href="index.html">MiPortfolio</a>
+            <a href="index.html" aria-label="Inicio"><i class="fas fa-laptop-code" style="color: black;"></i></a>
         </div>
         <nav>
             <ul class="nav-links">

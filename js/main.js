@@ -49,7 +49,7 @@ async function loadAboutContent() {
         aboutContent.innerHTML = `
             <div class="about-text">
                 <h3>Sobre Mí</h3>
-                <p>Soy un apasionado desarrollador web con experiencia en crear sitios web modernos y responsivos.</p>
+                <p>Hola me llamo Jorge, soy un apasionado desarrollador web con experiencia en crear sitios web modernos y responsivos.</p>
                 <div class="skills">
                     <span class="skill-tag">HTML5</span>
                     <span class="skill-tag">CSS3</span>
@@ -59,8 +59,7 @@ async function loadAboutContent() {
                 </div>
             </div>
             <div class="about-image">
-                <img src="images/placeholder.jpg" alt="Sobre Mí">
-            </div>
+                            </div>
         `;
     }
 }
