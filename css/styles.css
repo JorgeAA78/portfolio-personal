@@ -1035,6 +1035,7 @@ footer {
     line-height: 1.8;
     color: var(--text-color);
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .skills {
@@ -1120,4 +1121,131 @@ footer {
     .section {
         padding: 60px 0;
     }
+}
+/* === FIX Sobre Mí: que el texto ocupe todo el ancho y quede justificado === */
+
+/* El contenedor de la sección (2 columnas: imagen + contenido) se mantiene */
+#presentacion .about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Forzar #about-content a ser un bloque (no 2 columnas internas) */
+#presentacion #about-content.about-content {
+  display: block !important;     /* sobrescribe el display:flex anterior */
+  flex: 1 1 0;
+  min-width: 320px;
+  padding: 20px;
+}
+
+/* Ocultar cualquier .about-image que haya quedado DENTRO de #about-content */
+#presentacion #about-content > .about-image {
+  display: none !important;
+}
+
+/* Asegurar que el bloque de texto use todo el ancho disponible */
+#presentacion .about-content .about-text {
+  width: 100%;
+  max-width: 80ch;               /* opcional: mejora legibilidad en desktop */
+}
+
+/* Párrafo justificado y con guiones automáticos (desktop y mobile) */
+#presentacion .about-content p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;         /* soporte Safari */
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: var(--text-color);
+}
+
+/* Skills en línea y envolviendo */
+#presentacion .about-content .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  #presentacion .about-container {
+    flex-direction: column;      /* imagen arriba, texto abajo */
+    align-items: stretch;
+    gap: 30px;
+  }
+  #presentacion #about-content.about-content {
+    min-width: 0;
+    padding: 16px;
+  }
+  #presentacion .about-content .about-text {
+    max-width: none;             /* en mobile usa todo el ancho */
+  }
+  #presentacion .about-content p {
+    font-size: 1rem;             /* un poco más chico para móvil */
+  }
+}
+/* === CONTACTO: ancho controlado + grid responsive === */
+#contacto .contact-form form {
+  max-width: 700px;            /* un poco más ancho para 2 cols */
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+  display: grid;
+  grid-template-columns: 1fr;  /* mobile: 1 columna */
+  gap: 16px;
+}
+
+/* Inputs/textarea: full width dentro de cada celda */
+#contacto .contact-form input,
+#contacto .contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#contacto .contact-form input:focus,
+#contacto .contact-form textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(166,166,166,0.15);
+}
+
+/* Botón centrado y ancho controlado */
+#contacto .contact-form .btn {
+  justify-self: center;     /* centra en la grilla */
+  width: 100%;
+  max-width: 220px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+/* --- Desktop: 2 columnas --- */
+@media (min-width: 768px) {
+  #contacto .contact-form form {
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    gap: 20px;
+  }
+  /* 1er grupo (Nombre) col 1, 2do (Email) col 2 */
+  #contacto .contact-form .form-group:nth-child(1) { grid-column: 1; }
+  #contacto .contact-form .form-group:nth-child(2) { grid-column: 2; }
+
+  /* 3er grupo (Mensaje) ocupa ambas columnas */
+  #contacto .contact-form .form-group:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  /* Botón ocupa ambas columnas y se centra */
+  #contacto .contact-form .btn {
+    grid-column: 1 / -1;
+  }
 }
