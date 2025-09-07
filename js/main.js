@@ -110,7 +110,7 @@ async function handleContactFormSubmit(e) {
     const message = formData.get('message');
     
     try {
-        const response = await fetch('https://apx.school/api/utils/email-to-student', {
+        const response = await fetch('https://formspree.io/f/xdklylwo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
