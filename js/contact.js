@@ -27,7 +27,7 @@ async function handleContactFormSubmit(e) {
     
     try {
         // Enviar el formulario a la API
-        const response = await fetch('https://apx.school/api/utils/email-to-student', {
+        const response = await fetch('https://formspree.io/f/xdklylwo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
